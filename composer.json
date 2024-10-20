@@ -1,0 +1,20 @@
+{
+    "name": "kxov/grok",
+    "description": "grok algo",
+    "require-dev": {
+        "phpunit/phpunit": "11"
+    },
+    "autoload": {
+        "psr-4": {
+            "Kxov\\Grok\\": "src/"
+        },
+        "files": ["src/1.binary_search/binary_search.php"]
+    },
+    "authors": [
+        {
+            "name": "maksym.trofymov",
+            "email": "makx.work@gmail.com"
+        }
+    ],
+    "require": {}
+}
