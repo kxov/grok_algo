@@ -18,3 +18,5 @@
 
 .idea
 /sdk/sdk_config.yaml
+
+/src/.vscode
