@@ -1,10 +1,11 @@
 
 #include <iostream>
 #include <vector>
+#include <cassert>
 
 using namespace std;
 
-int bin_search(vector<int> &a, int target) {
+int bin_search(const vector<int> &a, const int target) {
     int l = 0, r = a.size() - 1;
 
     while(l <= r) {
@@ -22,7 +23,9 @@ int bin_search(vector<int> &a, int target) {
 }
 
 int main() {
-    vector<int> a = {1, 3, 12, 545, 1230};
+    assert(bin_search({1, 3, 12, 545, 1230}, 12) == 2);
+    assert(bin_search({1, 3, 12, 545, 1230}, 545) == 3);
+    assert(bin_search({1, 3, 12, 545, 1230}, 120) == -1);
 
-    std::cout << bin_search(a, 12) << std::endl;
+    return 0;
 }
