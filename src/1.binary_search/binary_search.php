@@ -24,3 +24,13 @@ function binary_search(array $list, int $item): int
     }
     return -1;
 }
+
+
+function binary_search_recursive(array $list, int $item, int $low = 0, int $high = null): int
+{
+    if ($low > $high) return -1;
+    $mid = $low + (int)floor(($high - $low) / 2);
+    if ($list[$mid] === $item) return $mid;
+    if ($list[$mid] < $item) return binary_search_recursive($list, $item, $mid + 1, $high);
+    return binary_search_recursive($list, $item, $low, $mid - 1);
+}
