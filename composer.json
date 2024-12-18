@@ -8,7 +8,10 @@
         "psr-4": {
             "Kxov\\Grok\\": "src/"
         },
-        "files": ["src/1.binary_search/binary_search.php"]
+        "files": [
+            "src/1.binary_search/binary_search.php",
+            "src/2.selection_sort/selection_sort.php"
+        ]
     },
     "authors": [
         {

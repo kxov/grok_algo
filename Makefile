@@ -9,6 +9,3 @@ composer-install:
 
 test:
 	docker-compose run --rm php-cli php vendor/bin/phpunit
-
-run:
-	docker-compose php bin/console ufo:sdk:generate
